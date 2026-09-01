@@ -1,4 +1,4 @@
-  #!/bin/zsh
+#!/bin/zsh
 set -euo pipefail
 
 project_dir="${0:A:h}"
@@ -36,3 +36,4 @@ codesign --force --deep --sign - \
     -r='designated => identifier "app.codex.FloatView"' \
     "$app_dir"
 echo "$app_dir"
+
